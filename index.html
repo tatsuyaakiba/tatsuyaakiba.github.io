@@ -27,17 +27,32 @@
 		-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			.button {
-			  border: none;
-			  color: white;
-			  padding: 16px 32px;
+			.navbar {
+			  overflow: hidden;
+			  background-color: #333;
+			  position: fixed;
+			  bottom: 0;
+			  width: 100%;
+			}
+			
+			.navbar a {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
 			  text-align: center;
+			  padding: 14px 16px;
 			  text-decoration: none;
-			  display: inline-block;
-			  font-size: 16px;
-			  margin: 4px 2px;
-			  transition-duration: 0.4s;
-			  cursor: pointer;
+			  font-size: 17px;
+			}
+			
+			.navbar a:hover {
+			  background: #f1f1f1;
+			  color: black;
+			}
+			
+			.navbar a.active {
+			  background-color: #04AA6D;
+			  color: white;
 			}
 			table {
 			border-collapse: collapse;
